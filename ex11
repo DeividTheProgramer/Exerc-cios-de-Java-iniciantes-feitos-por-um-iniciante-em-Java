@@ -1,0 +1,71 @@
+	import java.util.Locale;
+import java.util.Scanner;
+	
+	public class exercicio11 {
+		public static void main (String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double CQ1, XSA2, XBAC3, TORR4, REFRI5;
+		double x1, x2, x3, x4, x5, p1, p2, p3, p4, p5;
+		CQ1 = 4.00;
+		XSA2 = 4.50;
+		XBAC3 = 5.00;
+		TORR4 = 2.00;
+		REFRI5 = 1.50;
+		
+		
+		System.out.println("BEM VINDO A LANCHONETE LANCHARINO! ");
+		System.out.println("\n CARDAPIO \n   1 ----- Cachorro Quente ----- R$4.00 \n 2 ----- XSalada ----- R$4.50 \n 3 ----- X-Bacon ----- R$5.00 \n 4 ----- Torrada Simples ----- R$2.00 \n 5 ----- Refrigerante ----- R$1.50.");
+		System.out.println("\n Digite o codigo do lanche: ");
+		
+		if (sc.nextInt() == 1 ) {
+			System.out.printf("Cachorro Quente: R$ %.2f", CQ1);
+			System.out.printf("\n Quantos vão ser? ");
+			x1 = sc.nextInt();
+			p1 = x1 * CQ1;
+			System.out.printf("O TOTAL É DE: R$"+ p1 + "\n EITA COMO ELE É LANCHARINO!!");
+					
+			
+		}
+			else if (sc.nextInt() == 2) {
+				System.out.printf("X-Salada: R$ %.2f", XSA2);
+				System.out.printf("\n Quantos vão ser?" );
+				x2 = sc.nextInt();
+				p2 = x2 * XSA2;
+				System.out.printf("O TOTAL É DE: R$" + p2 + "\n HORA DO LANCHEEE!!");
+			
+		}
+				else if (sc.nextInt() == 3) {
+					System.out.printf("X-BACON: R$ %.2f", XBAC3);
+					System.out.println("\n Quantos vão ser?");
+					x3 = sc.nextInt();
+					p3 = x3 * XBAC3;
+					System.out.printf("O TOTAL É DE: R$" + p3 +"\n OOOOOOO LANCHARINOOOOO");
+		}
+					else if (sc.nextInt() == 4) {
+						System.out.printf("Torrada Simples: R$ %.2f", TORR4);
+						System.out.println("\n Quantos vão ser?");
+						x4 = sc.nextInt();
+						p4 = x4 * TORR4;
+						System.out.println("O TOTAL É DE: R$"+ p4 + "\n LANCHA Y LANCHA!");
+		}
+						else if (sc.nextInt() == 5) {
+							System.out.printf("Refrigerante: R$ %.2f", REFRI5);
+							System.out.println("\n Quantos vão ser?");
+							x5 = sc.nextInt();
+							p5 = x5 * REFRI5;
+							System.out.println("O TOTAL É DE: R$" + p5 + "\n LANCHARINO JR");
+							
+					
+					}
+		
+			
+			sc.close();
+			
+			
+			
+			
+			
+		}
+}
