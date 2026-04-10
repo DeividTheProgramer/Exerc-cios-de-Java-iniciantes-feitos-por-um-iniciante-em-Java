@@ -1,1 +1,40 @@
 
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio5 {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		float peca1, quantidade1, valor1;
+		float peca2, quantidade2, valor2;
+		System.out.println("INSIRA A NUMERAÇÃO DA PEÇA: ");
+		peca1 = sc.nextInt();
+		System.out.println("Insira a quantidade de peças: ");
+		quantidade1 = sc.nextInt();
+		System.out.println("Insira o valor da peça:");
+		valor1 = sc.nextFloat();
+		
+		System.out.println("Insira a numeração da peça: ");
+		peca2= sc.nextInt();
+		System.out.println("Insira a quantidade de peças: ");
+		quantidade2 = sc.nextInt();
+		System.out.println("Insira o valor da peça: ");
+		valor2 = sc.nextFloat();
+		
+		float valortotal1 = quantidade1 * valor1;
+		float valortotal2 = quantidade2 * valor2;
+		
+		float valortotalfinal = valortotal1 + valortotal2;
+		
+		System.out.printf("o valor total:R$%.2f", valortotalfinal);
+		
+		sc.close();
+		
+		
+		
+		
+		
+	}
+}
