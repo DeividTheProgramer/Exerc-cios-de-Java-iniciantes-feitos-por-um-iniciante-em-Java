@@ -1,0 +1,33 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio1 {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);	
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("O programa a seguir irá somar dois numeros inteiros:");
+		
+		int v;	
+		int g;
+	
+		
+		
+		System.out.println("Digite o primeiro numero: ");
+		g = sc.nextInt();
+		
+		System.out.println("Digite o segundo  numero: ");
+		v = sc.nextInt();
+		
+		int soma = v + g;
+		
+		System.out.printf("O RESULTADO É: "+ soma);
+		
+		
+		
+		sc.close();
+		
+		
+	}
+		
+}
