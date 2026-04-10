@@ -1,0 +1,41 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicos6 {
+	public static void main (String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner (System.in);
+		
+		
+		double A, B, C;
+		double p = 3.14159;
+		A = sc.nextDouble();
+		B = sc.nextDouble();
+		C = sc.nextDouble();
+		
+		
+		double a = (A * C) /2;
+		
+		double areacr = Math.pow(C, 2);
+		double b = p* areacr;
+		
+		double c = (A + B) * C /2;
+		
+		double d = B * B;
+		
+		double e = A * B;
+		
+		
+		System.out.printf("\n TRINGULO: %.3f", a);
+		System.out.printf("\n CIRCULO: %.3f", b);
+		System.out.printf("\n TRAPEZIO: %.3f", c);
+		System.out.printf("\n QUADRADO: %.3f", d);
+		System.out.printf("\n RETANGULO: %.3f", e);
+
+		
+		
+		sc.close();
+	}
+	
+
+}
